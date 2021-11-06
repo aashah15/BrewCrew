@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
     return StreamProvider<List<Brew>?>.value(
       value: DatabaseService(uid: '').brews,
       initialData: null,
+      catchError: (_, __) => null,
       child: Scaffold(
         backgroundColor: Colors.brown[50],
         appBar: AppBar(
