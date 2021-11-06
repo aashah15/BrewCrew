@@ -2,9 +2,9 @@ import 'package:brew_crew2/models/brew.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DatabaseService {
-  final String uid;
+  final String? uid;
   DatabaseService({
-    required this.uid,
+    this.uid,
   });
 
   // collection reference
