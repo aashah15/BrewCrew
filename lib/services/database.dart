@@ -21,7 +21,7 @@ class DatabaseService {
   }
 
   // get brews stream
-  Stream<List<Brew>?> get brews {
+  Stream<List<Brew>> get brews {
     return brewCollection.snapshots().map(_brewListFromSnapshot);
   }
 
