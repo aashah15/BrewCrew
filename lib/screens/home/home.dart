@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
     }
 
     return StreamProvider<List<Brew>>.value(
-      value: DatabaseService(uid: '').brews,
+      value: DatabaseService().brews,
       initialData: const <Brew>[],
       catchError: (_, __) => const <Brew>[],
       child: Scaffold(
