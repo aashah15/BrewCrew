@@ -1,11 +1,10 @@
 # brew_crew2
 
-A new Flutter project.
+A new Flutter project of new version of The Net Ninja Brew Crew using latest version of Flutter and packages
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
+In this series we will be lerning how to create a flutter App for mobiles using Firebase as backend. The App we wil be creating is called Brew Crew Which means an App for Coffee or Tea or something.
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
