@@ -60,6 +60,18 @@ class _SettingsFormState extends State<SettingsForm> {
             },
           ),
           // slider
+          Slider(
+            value:
+                (_currentStrength == 100 ? 100 : _currentStrength).toDouble(),
+            activeColor:
+                Colors.brown[_currentStrength == 100 ? 100 : _currentStrength],
+            inactiveColor:
+                Colors.brown[_currentStrength == 100 ? 100 : _currentStrength],
+            min: 100.0,
+            max: 900.0,
+            divisions: 8,
+            onChanged: (val) => setState(() => _currentStrength = val.round()),
+          ),
           ElevatedButton(
               child: const Text(
                 'Update',
